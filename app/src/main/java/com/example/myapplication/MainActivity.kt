@@ -30,8 +30,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DiceRollerApp(){
     DiceWithButtonAndImage(modifier = Modifier
-        .fillMaxSize()
-        .wrapContentSize(Alignment.Center))
+        .fillMaxSize() //be as large as the element not smaller
+        .wrapContentSize(Alignment.Center)) // center the element if smaller
 }
 
 @Composable
